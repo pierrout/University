@@ -1,0 +1,26 @@
+package carbono;
+
+/**
+ *
+ * @author pierr
+ */
+public class Carbono {
+
+    public static void main(String[] args) {
+        Car carro = new Car();
+            System.out.printf("%s\n",carro.getNome());
+            System.out.printf("%f\n",carro.getCarbonFootPrint());
+        
+        Bicycle bicicleta = new Bicycle();//usar contrutor explicitamente aki
+            System.out.printf("%s\n",bicicleta.getNome());
+            System.out.printf("%f\n",bicicleta.getCarbonFootPrint());
+            
+        Building predio = new Building(); 
+            System.out.printf("%s\n",predio.getNome());
+            System.out.printf("%f",predio.getCarbonFootPrint());
+            
+        
+        
+    }
+    
+}
