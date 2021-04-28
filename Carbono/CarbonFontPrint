@@ -1,0 +1,10 @@
+package carbono;
+
+/**
+ *
+ * @author pierr
+ */
+public interface CarbonFontPrint {
+    public float getCarbonFootPrint();
+    public String getNome();
+}
