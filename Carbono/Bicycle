@@ -1,0 +1,48 @@
+package carbono;
+
+/**
+ *
+ * @author pierr
+ */
+public class Bicycle implements CarbonFontPrint{
+    float distancia;
+    float combustivel;
+    float fatorEmissao;
+
+    public float getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(float distancia) {
+        this.distancia = distancia;
+    }
+
+    public float getCombustivel() {
+        return combustivel;
+    }
+
+    public void setCombustivel(float combustivel) {
+        this.combustivel = combustivel;
+    }
+
+    public float getFatorEmissao() {
+        return fatorEmissao;
+    }
+
+    public void setFatorEmissao(float fatorEmissao) {
+        this.fatorEmissao = fatorEmissao;
+    }
+    
+    @Override
+    public String getNome (){
+        return "Bicycle";
+    }
+    
+    @Override
+    public float getCarbonFootPrint (){
+        float carbono;
+        carbono = ((distancia + combustivel)* fatorEmissao);
+        return carbono;
+    }
+    
+}
