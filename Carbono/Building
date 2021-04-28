@@ -1,0 +1,57 @@
+package carbono;
+
+/**
+ *
+ * @author pierr
+ */
+public class Building implements CarbonFontPrint {
+    float total;
+    float fatorEmissao;
+    float aquecimento;
+    float densidade; 
+
+    public float getTotal() {
+        return total;
+    }
+
+    public void setTotal(float total) {
+        this.total = total;
+    }
+
+    public float getFatorEmissao() {
+        return fatorEmissao;
+    }
+
+    public void setFatorEmissão(float fatorEmissao) {
+        this.fatorEmissao = fatorEmissao;
+    }
+
+    public float getAquecimento() {
+        return aquecimento;
+    }
+
+    public void setAquecimento(float aquecimento) {
+        this.aquecimento = aquecimento;
+    }
+
+    public float getDensidade() {
+        return densidade;
+    }
+
+    public void setDensidade(float densidade) {
+        this.densidade = densidade;
+    }
+    
+    @Override 
+    public String getNome (){
+        return "Bulding";
+    }
+    
+    @Override
+    public float getCarbonFootPrint (){
+        float carbono;
+        carbono = (total*(fatorEmissao * aquecimento)*densidade);
+        return carbono;
+    }
+    
+}
