@@ -1,4 +1,4 @@
- ``` package testedepolimorfismo;
+package testedepolimorfismo;
 
 public class EmpregadoComissionadoComBase extends EmpregadoComissionado {
     private double salarioBase; 
@@ -33,4 +33,3 @@ public class EmpregadoComissionadoComBase extends EmpregadoComissionado {
          super.toString(), "salário base", getSalarioBase() );
    } 
 }
-```
